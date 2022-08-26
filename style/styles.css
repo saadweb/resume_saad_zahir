@@ -151,7 +151,9 @@ margin: 10px 0px;
     .main{
         margin: 20px 15%;
     }
-    
+    .content .experienceBlock{
+        margin-top: 2rem;
+    }
 }
 @media(max-width:888px){
     .main{
@@ -160,5 +162,8 @@ margin: 10px 0px;
     .content{
         margin-left: 1rem;
         margin-top: 1rem;
+    }
+    .content .experienceBlock{
+        margin-top: 2rem;
     }
 }
