@@ -1,0 +1,148 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(195, 195, 195);
+    align-items: center;
+    justify-content: center;
+    padding: 20px 25%;
+    }
+.main{
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+.leftBar{
+    background-color: #2B3A48;
+    flex: 4;
+    padding: 20px;
+}
+.leftBar img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+.leftBar .img-profil{
+    text-align: center;
+}
+.leftBar .title-Block{
+ color: #fff;
+ font-size: 15px;
+ font-weight: bold;
+ margin-bottom: 10px;
+ margin-top: 20px;
+ text-transform: uppercase;
+}
+.leftBar .ligne{
+ color: #fff;
+ margin-bottom: 4px;
+ margin-left: 10px;
+}
+.skillsChapeau{
+text-align: center;
+color: rgb(146, 251, 251);
+margin: 10px 0px;
+}
+.horLine{
+    background-color: #fff;
+    height:1px;
+    width: 10px;
+}
+.skillsProgress{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.techName{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.progressBarContainer{
+    align-items: center;
+    width: 60%;
+    display: flex;
+}
+.progressEmpty{
+    background-color: rgb(109, 232, 127);
+    height: 8px;
+    width: 80%;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.progressFull{
+    background-color: #fff;
+    height: 8px;
+    width: 20%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.bodyResume{
+    flex: 8;
+    background-color: #fff;
+}
+.cardName{
+    width: 100%;
+    height: 12rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.cardNameContent{
+    background-color: #2B3A48;
+    height: 8rem;
+    width: 25rem;
+    padding-top: 2.5rem;
+    text-align: center;
+}
+.cardNameContent .name{
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.cardNameContent .profil{
+    color: #fff;
+    font-size: 10px;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+}
+.content{
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+.content .experienceBlock{
+    font-size: 20px;
+    color: #263748;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+.content .ligne{
+    height: 2px;
+    width: 100%;
+    background-color: #263748;
+    margin: 5px 0px 10px 0px;
+}
+.detailsJob p{
+    color: #067E9C;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.detailsJob b{
+    color: #263748;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.detailsJob ul{
+    margin-left: 40px;
+}
+.detailsJob li{
+    margin-bottom: 5px;
+}
+/* #111421 */
