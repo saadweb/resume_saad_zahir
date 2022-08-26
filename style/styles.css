@@ -7,12 +7,12 @@ body{
     background-color: rgb(195, 195, 195);
     align-items: center;
     justify-content: center;
-    padding: 20px 25%;
     }
 .main{
     display: flex;
     flex: 1;
     height: 100%;
+    margin: 20px 25%;
 }
 .leftBar{
     background-color: #2B3A48;
@@ -114,6 +114,7 @@ margin: 10px 0px;
 .content{
     margin-left: 3rem;
     margin-top: 3rem;
+    padding-right: 10px;
 }
 .content .experienceBlock{
     font-size: 20px;
@@ -146,3 +147,18 @@ margin: 10px 0px;
     margin-bottom: 5px;
 }
 /* #111421 */
+@media(max-width:1300px){
+    .main{
+        margin: 20px 15%;
+    }
+    
+}
+@media(max-width:888px){
+    .main{
+        margin: 0px;
+    }
+    .content{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+}
