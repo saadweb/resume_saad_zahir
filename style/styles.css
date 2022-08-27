@@ -12,7 +12,7 @@ body{
     display: flex;
     flex: 1;
     height: 100%;
-    margin: 20px 25%;
+    margin: 0px 25%;
 }
 .leftBar{
     background-color: #2B3A48;
@@ -84,6 +84,7 @@ margin: 10px 0px;
 .bodyResume{
     flex: 8;
     background-color: #fff;
+    
 }
 .cardName{
     width: 100%;
@@ -107,7 +108,7 @@ margin: 10px 0px;
 }
 .cardNameContent .profil{
     color: #fff;
-    font-size: 10px;
+    font-size: 12px;
     /* font-weight: bold; */
     text-transform: uppercase;
 }
@@ -158,6 +159,7 @@ margin: 10px 0px;
 @media(max-width:888px){
     .main{
         margin: 0px;
+
     }
     .content{
         margin-left: 1rem;
