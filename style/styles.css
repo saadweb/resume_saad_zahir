@@ -1,208 +1,146 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(195, 195, 195);
-    /* align-items: center;
-    justify-content: center; */
-    }
-.main{
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    color: #333;
     display: flex;
-    flex: 1;
-    height: 100%;
-    margin: 0px 25%;
-}
-.leftBar{
-    background-color: #2B3A48;
-    flex: 4;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
-.leftBar img{
-    height: 150px;
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    background-color: #2B3A48;
+    color: white;
+    padding: 20px;
+    flex: 1;
+}
+
+.profile-img img {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
     border: 4px solid #fff;
+    display: block;
+    margin: 0 auto 20px;
 }
-.leftBar .img-profil{
-    text-align: center;
+
+.title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
 }
-.leftBar .title-Block{
- color: #fff;
- font-size: 15px;
- font-weight: bold;
- margin-bottom: 10px;
- margin-top: 20px;
- text-transform: uppercase;
+
+.subtitle {
+    font-size: 16px;
+    margin: 15px 0 5px;
+    color: #A9CCE3;
 }
-.leftBar .ligne{
- color: #fff;
- margin-bottom: 4px;
- margin-left: 10px;
-}
-.skillsChapeau{
-text-align: center;
-color: rgb(146, 251, 251);
-margin: 10px 0px;
-}
-.horLine{
-    background-color: #fff;
-    height:1px;
-    width: 10px;
-}
-.skillsProgress{
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-}
-.techName{
-    font-size: 15px;
-    font-weight: bold;
-    color: #fff;
+
+.progress-bar {
     margin-bottom: 15px;
 }
-.progressBarContainer{
-    align-items: center;
-    width: 60%;
-    display: flex;
-}
-.progressEmpty{
-    background-color: rgb(109, 232, 127);
-    height: 8px;
-    width: 80%;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-}
-.progressFull{
-    background-color: #fff;
-    height: 8px;
-    width: 20%;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-.bodyResume{
-    flex: 8;
-    background-color: #fff;
-    
-}
-.cardName{
-    width: 100%;
-    height: 12rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-.cardNameContent{
-    background-color: #2B3A48;
-    height: 8rem;
-    width: 25rem;
-    padding-top: 2.5rem;
-    text-align: center;
-}
-.cardNameContent .name{
-    color: #fff;
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 7px;
-}
-.cardNameContent .profil{
-    color: #fff;
-    font-size: 12px;
-    /* font-weight: bold; */
-    text-transform: uppercase;
-}
-.content{
-    margin-left: 3rem;
-    margin-top: 3rem;
-    padding-right: 10px;
-}
-.content .experienceBlock{
-    font-size: 20px;
-    color: #263748;
-    font-weight: bold;
-    margin-top: 3rem;
-}
-.content .ligne{
-    height: 2px;
-    width: 100%;
-    background-color: #263748;
-    margin: 5px 0px 10px 0px;
-}
-.detailsJob p{
-    color: #067E9C;
-    font-size: 15px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-}
-.detailsJob b{
-    color: #263748;
-    font-size: 15px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-}
-.detailsJob ul{
-    margin-left: 40px;
-}
-.detailsJob li{
-    margin-bottom: 5px;
-}
-.input-icons{
-    background-color: #263748;
-    color: #fff;
-    padding: 10px;
-    font-size: 12px;
-    border-radius: 10px;
-    border: 1px solid #263748;
-    font-weight: bold;
-    text-transform: uppercase;
-    position:absolute;
-    top:10px;
-    right:15px;
-    display : 'block';
-}
-.generatePDF{
-    background-color: #263748;
-    color: #fff;
-    font-size: 12px;
-    border: 1px solid #263748;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-/* #111421 */
-@media(max-width:1300px){
-    .main{
-        margin: 20px 15%;
-    }
-    .content .experienceBlock{
-        margin-top: 2rem;
-    }
-}
-@media(max-width:888px){
-    .main{
-        margin: 0px;
 
+.progress-bar span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.progress {
+    background-color: #444;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.progress-full {
+    background-color: #1abc9c;
+    height: 8px;
+    border-radius: 50px;
+}
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #555;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.experience, .education {
+    margin-bottom: 20px;
+}
+
+.experience h3, .education h3 {
+    font-size: 18px;
+    color: #2B3A48;
+    margin-bottom: 10px;
+}
+
+.experience ul, .education ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.experience ul li, .education ul li {
+    margin-bottom: 5px;
+}
+
+.section h2.title {
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    background-color: #2B3A48;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.download-btn:hover {
+    background-color: #1abc9c;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
     }
-    .content{
-        margin-left: 1rem;
-        margin-top: 1rem;
-    }
-    .content .experienceBlock{
-        margin-top: 1rem;
+    .sidebar, .main-content {
+        width: 100%;
     }
 }
-@media print {
-    /* Example customizations */
-    body {
-      margin: none;
-      padding: none;
-      font-size: 12pt;
-      background-color: white;
-    }
-    .main{
-        height: 100%;
-    }
-    .leftBar{
-        padding: 15px;
-    }
-  }
